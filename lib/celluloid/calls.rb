@@ -25,7 +25,7 @@ module Celluloid
     def dispatch(obj)
       check(obj)
       _b = @block && @block.to_proc
-      obj.public_send(@method, *@arguments, &_b)
+      obj.public_send(*[@method, @arguments, &_b])
       #     rescue Celluloid::TaskTimeout => ex
       #       raise ex unless ( @retry += 1 ) <= RETRY_CALL_LIMIT
       #       puts "retrying"

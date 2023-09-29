@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 
-require File.expand_path("../culture/sync", __FILE__)
+# require File.expand_path("../culture/sync", __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name        = "celluloid"
-  gem.version     = Celluloid::VERSION
+  gem.version     = "0.17.3"
   gem.platform    = Gem::Platform::RUBY
   gem.summary     = "Actor-based concurrent object framework for Ruby"
   gem.description = "Celluloid enables people to build concurrent programs out of concurrent objects just as easily as they build sequential programs out of sequential objects"
@@ -29,5 +29,5 @@ Gem::Specification.new do |gem|
 
   gem.require_path = "lib"
 
-  Celluloid::Sync::Gemspec[gem]
+  # Celluloid::Sync::Gemspec[gem]
 end
